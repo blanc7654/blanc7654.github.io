@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>RendezTrauma</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script defer src="./js/main.js"></script>
+  <title>랑데트라우마</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
-  <h1>랑데트라우마</h1>
-  <input type="text" id="start" placeholder="출발지를 입력하세요" />
-  <button id="gps">GPS로 위치 설정</button>
-  <button id="calc">ETA 계산</button>
-  <div id="result"></div>
+  <h1>랑데트라우마 웹앱</h1>
+  <p>출발지를 입력하세요:</p>
+  <input type="text" id="start" placeholder="예: 광명역" />
+  <button id="gps">📍 현재 위치로 설정</button>
+  <button onclick="calculateETA()">ETA 계산</button>
+  <div id="result">⏳</div>
 </body>
 </html>
