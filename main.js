@@ -10,7 +10,7 @@ document.getElementById('calc').addEventListener('click', async () => {
   const url = `https://dapi.kakao.com/v2/local/search/keyword.json?query=${encodeURIComponent(start)}`;
   try {
     const res = await fetch(url, {
-      headers: { Authorization: 'KakaoAK YOUR_KAKAO_REST_API_KEY' }
+      headers: { Authorization: 'KakaoAK 15c28ebb75dda243548737ac615a5681' }
     });
     const data = await res.json();
     if (data.documents.length === 0) {
